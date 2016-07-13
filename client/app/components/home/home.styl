@@ -1,0 +1,44 @@
+@import '../../../styles'
+
+.home
+  .hero
+    height 100vh
+    *
+      color text-color
+
+    .title
+      text-align center
+      h1
+        font-size 3rem
+      h3
+        font-size 2rem
+      *
+        font-weight 300
+
+  input
+    padding 5px
+
+  .users-container, .action
+    padding 20px
+    justify-content center
+    display flex
+    flex-direction row
+    flex-wrap wrap
+
+    .user
+      text-align center
+      margin 1vw
+      width 15vw
+      height 15vh
+      background-color accent-color
+      position relative
+
+      .user-delete
+        position absolute
+        left 5px
+        top 5px
+        cursor pointer
+
+      .user-name
+        line-height 10vh
+        font-size 2rem

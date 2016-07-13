@@ -1,0 +1,40 @@
+<section class="home">
+  <div class="hero">
+    <div class="title">
+      <h1>
+        Welcome to Battleship!
+      </h1>
+    </div>
+
+    <div class="alert-message" ng-if="vm.showingAlert">
+      <h1 class="message">
+        {{ vm.alert }}
+      </h1>
+    </div>
+
+    <div class="action">
+        <button class="button raised" ng-click="vm.homeAction()">{{ vm.getActionText() }}</button>
+
+        <input
+          type="text" 
+          name="user" 
+          ng-model="vm.userName"
+          placeholder="user name" 
+          ng-if="vm.lessThanTwoUsers()"
+          ng-enter="vm.addUser()"
+          >
+    </div>
+
+    <div class="users-container">
+      <div class="user" ng-repeat="user in vm.users track by user.id">
+        <div class="user-delete" ng-click="vm.removeUser(user.id)">
+          X
+        </div>
+        <div class="user-name">
+          {{ ::user.name | capitalize }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

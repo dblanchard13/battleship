@@ -1,0 +1,155 @@
+<section class="opponent-grid">
+  <h1 class="left-marg-15">{{ vm.getOpponentName() | capitalize }}'s Grid</h1>
+
+  <div class="alert-message" ng-if="vm.showingAlert">
+    <h1 class="message">
+      {{ vm.alert }}
+    </h1>
+  </div>
+
+  <table class="table">
+    <tr>
+      <td></td>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+      <td>G</td>
+      <td>H</td>
+      <td>I</td>
+      <td>J</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('00')" id="00">{{ vm.getCellInterior('00') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('01')" id="01">{{ vm.getCellInterior('01') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('02')" id="02">{{ vm.getCellInterior('02') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('03')" id="03">{{ vm.getCellInterior('03') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('04')" id="04">{{ vm.getCellInterior('04') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('05')" id="05">{{ vm.getCellInterior('05') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('06')" id="06">{{ vm.getCellInterior('06') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('07')" id="07">{{ vm.getCellInterior('07') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('08')" id="08">{{ vm.getCellInterior('08') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('09')" id="09">{{ vm.getCellInterior('09') }}</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('10')" id="10">{{ vm.getCellInterior('10') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('11')" id="11">{{ vm.getCellInterior('11') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('12')" id="12">{{ vm.getCellInterior('12') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('13')" id="13">{{ vm.getCellInterior('13') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('14')" id="14">{{ vm.getCellInterior('14') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('15')" id="15">{{ vm.getCellInterior('15') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('16')" id="16">{{ vm.getCellInterior('16') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('17')" id="17">{{ vm.getCellInterior('17') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('18')" id="18">{{ vm.getCellInterior('18') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('19')" id="19">{{ vm.getCellInterior('19') }}</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('20')" id="20">{{ vm.getCellInterior('20') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('21')" id="21">{{ vm.getCellInterior('21') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('22')" id="22">{{ vm.getCellInterior('22') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('23')" id="23">{{ vm.getCellInterior('23') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('24')" id="24">{{ vm.getCellInterior('24') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('25')" id="25">{{ vm.getCellInterior('25') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('26')" id="26">{{ vm.getCellInterior('26') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('27')" id="27">{{ vm.getCellInterior('27') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('28')" id="28">{{ vm.getCellInterior('28') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('29')" id="29">{{ vm.getCellInterior('29') }}</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('30')" id="30">{{ vm.getCellInterior('30') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('31')" id="31">{{ vm.getCellInterior('31') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('32')" id="32">{{ vm.getCellInterior('32') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('33')" id="33">{{ vm.getCellInterior('33') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('34')" id="34">{{ vm.getCellInterior('34') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('35')" id="35">{{ vm.getCellInterior('35') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('36')" id="36">{{ vm.getCellInterior('36') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('37')" id="37">{{ vm.getCellInterior('37') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('38')" id="38">{{ vm.getCellInterior('38') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('39')" id="39">{{ vm.getCellInterior('39') }}</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('40')" id="40">{{ vm.getCellInterior('40') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('41')" id="41">{{ vm.getCellInterior('41') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('42')" id="42">{{ vm.getCellInterior('42') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('43')" id="43">{{ vm.getCellInterior('43') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('44')" id="44">{{ vm.getCellInterior('44') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('45')" id="45">{{ vm.getCellInterior('45') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('46')" id="46">{{ vm.getCellInterior('46') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('47')" id="47">{{ vm.getCellInterior('47') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('48')" id="48">{{ vm.getCellInterior('48') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('49')" id="49">{{ vm.getCellInterior('49') }}</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('50')" id="50">{{ vm.getCellInterior('50') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('51')" id="51">{{ vm.getCellInterior('51') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('52')" id="52">{{ vm.getCellInterior('52') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('53')" id="53">{{ vm.getCellInterior('53') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('54')" id="54">{{ vm.getCellInterior('54') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('55')" id="55">{{ vm.getCellInterior('55') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('56')" id="56">{{ vm.getCellInterior('56') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('57')" id="57">{{ vm.getCellInterior('57') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('58')" id="58">{{ vm.getCellInterior('58') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('59')" id="59">{{ vm.getCellInterior('59') }}</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('60')" id="60">{{ vm.getCellInterior('60') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('61')" id="61">{{ vm.getCellInterior('61') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('62')" id="62">{{ vm.getCellInterior('62') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('63')" id="63">{{ vm.getCellInterior('63') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('64')" id="64">{{ vm.getCellInterior('64') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('65')" id="65">{{ vm.getCellInterior('65') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('66')" id="66">{{ vm.getCellInterior('66') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('67')" id="67">{{ vm.getCellInterior('67') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('68')" id="68">{{ vm.getCellInterior('68') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('69')" id="69">{{ vm.getCellInterior('69') }}</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('70')" id="70">{{ vm.getCellInterior('70') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('71')" id="71">{{ vm.getCellInterior('71') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('72')" id="72">{{ vm.getCellInterior('72') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('73')" id="73">{{ vm.getCellInterior('73') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('74')" id="74">{{ vm.getCellInterior('74') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('75')" id="75">{{ vm.getCellInterior('75') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('76')" id="76">{{ vm.getCellInterior('76') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('77')" id="77">{{ vm.getCellInterior('77') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('78')" id="78">{{ vm.getCellInterior('78') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('79')" id="79">{{ vm.getCellInterior('79') }}</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('80')" id="80">{{ vm.getCellInterior('80') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('81')" id="81">{{ vm.getCellInterior('81') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('82')" id="82">{{ vm.getCellInterior('82') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('83')" id="83">{{ vm.getCellInterior('83') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('84')" id="84">{{ vm.getCellInterior('84') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('85')" id="85">{{ vm.getCellInterior('85') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('86')" id="86">{{ vm.getCellInterior('86') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('87')" id="87">{{ vm.getCellInterior('87') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('88')" id="88">{{ vm.getCellInterior('88') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('89')" id="89">{{ vm.getCellInterior('89') }}</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('90')" id="90">{{ vm.getCellInterior('90') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('91')" id="91">{{ vm.getCellInterior('91') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('92')" id="92">{{ vm.getCellInterior('92') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('93')" id="93">{{ vm.getCellInterior('93') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('94')" id="94">{{ vm.getCellInterior('94') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('95')" id="95">{{ vm.getCellInterior('95') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('96')" id="96">{{ vm.getCellInterior('96') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('97')" id="97">{{ vm.getCellInterior('97') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('98')" id="98">{{ vm.getCellInterior('98') }}</td>
+      <td ng-click="vm.dropBomb($event)" ng-class="vm.getCellInterior('99')" id="99">{{ vm.getCellInterior('99') }}</td>
+    </tr>
+  </table>
+</section>
