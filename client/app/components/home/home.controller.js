@@ -32,7 +32,7 @@ class HomeController {
   }
 
   homeAction(){
-    this.lessThanTwoUsers() ? this.submit() : this.beginGame();
+    this.lessThanTwoUsers() ? this.addUser() : this.beginGame();
   }
 
   removeUser(id){
