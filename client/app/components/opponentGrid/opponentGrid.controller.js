@@ -24,6 +24,7 @@ class OpponentGridController {
           this.showAlert('All opponent ships have been sunk!');
           this.Gameplay.crownWinner();
           this.$state.go('gameOver');
+          return;
         }
       }
     }

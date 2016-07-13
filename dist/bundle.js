@@ -44865,6 +44865,7 @@
 	            this.showAlert('All opponent ships have been sunk!');
 	            this.Gameplay.crownWinner();
 	            this.$state.go('gameOver');
+	            return;
 	          }
 	        }
 	      } else {
@@ -45195,7 +45196,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".gameOver {\n  position: relative;\n}\n.gameOver .hero {\n  height: 200vh;\n}\n.gameOver .hero * {\n  color: rgba(0,0,0,0.87);\n}\n.gameOver .hero .title {\n  text-align: center;\n}\n.gameOver .hero .title h1 {\n  font-size: 3rem;\n}\n.gameOver .hero .title h3 {\n  font-size: 2rem;\n}\n.gameOver .hero .title * {\n  font-weight: 300;\n}\n.gameOver .hero .items-container {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  text-align: center;\n}\n.gameOver .hero .items-container .item {\n  margin: 1vw;\n  width: 10vw;\n  height: 20vh;\n  background-color: #1de9b6;\n  position: relative;\n}\n.gameOver .hero .items-container .item .item-name {\n  line-height: 19vh;\n  font-size: 2rem;\n}\n.gameOver .hero .items-container .item .item-delete {\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  cursor: pointer;\n}\n.gameOver .hero .action {\n  display: flex;\n  justify-content: center;\n}\n.gameOver .hero .action .button {\n  margin: 1vw;\n}\n.gameOver .hero .action ::-webkit-input-placeholder {\n  color: #ff8159;\n}\n.gameOver .hero .action :-moz-placeholder {\n  color: #ff8159;\n}\n.gameOver .hero .action ::-moz-placeholder {\n  color: #ff8159;\n}\n.gameOver .hero .action :-ms-input-placeholder {\n  color: #ff8159;\n}\n.gameOver .hero .alert-message {\n  text-align: center;\n}\n", ""]);
+	exports.push([module.id, ".gameOver {\n  position: relative;\n}\n.gameOver * {\n  color: rgba(0,0,0,0.87);\n}\n.gameOver .title {\n  text-align: center;\n}\n.gameOver .title h1 {\n  font-size: 3rem;\n}\n.gameOver .title h3 {\n  font-size: 2rem;\n}\n.gameOver .title * {\n  font-weight: 300;\n}\n.gameOver .action {\n  display: flex;\n  justify-content: center;\n}\n.gameOver .action .button {\n  margin: 1vw;\n}\n", ""]);
 	
 	// exports
 
@@ -45245,7 +45246,7 @@
 /* 57 */
 /***/ function(module, exports) {
 
-	module.exports = "<section class=\"gameOver\">\n  <h1>{{ vm.getWinnerName() | capitalize}} Won!!</h1>\n</section>\n"
+	module.exports = "<section class=\"gameOver\">\n  <h1>{{ vm.getWinnerName() | capitalize}} Won!!</h1>\n\n  <div class=\"action\">\n    <button class=\"button raised\" ui-sref=\"home\">Play Again!</button>\n  </div>\n</section>\n"
 
 /***/ },
 /* 58 */
@@ -57950,7 +57951,7 @@
 	    value: function placeShips() {
 	      var _this2 = this;
 	
-	      var ships = [[5, 'Aircraft Carrier'], [4, 'Battleship'], [3, 'Cruiser'], [2, 'Destroyer'], [1, 'Submarine'], [1, 'Submarine']];
+	      var ships = [[5, 'Aircraft Carrier'], [4, 'Battleship'], [3, 'Cruiser'], [2, 'Destroyer'], [1, 'Submarine']];
 	
 	      _lodash2['default'].each(ships, function (specs) {
 	        var _specs = _slicedToArray(specs, 2);
@@ -57987,7 +57988,7 @@
 	  }, {
 	    key: 'allShipsSunk',
 	    value: function allShipsSunk() {
-	      return this.shipsSunk === 6;
+	      return this.shipsSunk === 5;
 	    }
 	  }]);
 	

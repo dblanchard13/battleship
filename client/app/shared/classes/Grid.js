@@ -24,7 +24,7 @@ class Grid {
   }
 
   placeShips() {
-    const ships = [[5, 'Aircraft Carrier'], [4, 'Battleship'], [3, 'Cruiser'], [2, 'Destroyer'], [1, 'Submarine'], [1, 'Submarine']];
+    const ships = [[5, 'Aircraft Carrier'], [4, 'Battleship'], [3, 'Cruiser'], [2, 'Destroyer'], [1, 'Submarine']];
 
     _.each(ships, (specs) => {
       const [length, name] = specs;
@@ -55,7 +55,7 @@ class Grid {
   }
 
   allShipsSunk() {
-    return this.shipsSunk === 6;
+    return this.shipsSunk === 5;
   }
 };
 
