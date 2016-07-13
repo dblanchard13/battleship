@@ -4,7 +4,10 @@
   "description": "",
   "scripts": {
     "start": "gulp",
-    "test": "karma start"
+    "serve": "gulp serve"
+  },
+  "engines": {
+    "node": "4.4.3"
   },
   "author": "",
   "license": "ISC",
